@@ -1,0 +1,6 @@
+Firefox : Autoriser le proxy pour localhost
+https://stackoverflow.com/questions/57419408/how-to-make-firefox-use-a-proxy-server-for-localhost-connections
+
+about:config dans la barre d'adresse
+network.proxy.allow_hijacking_localhost dans la recherche
+Puis bouton toggle

@@ -1,0 +1,7 @@
+./jmeter -n -t ../../Solutions/1_PremierPlanTest/PremierPlan.jmx -JUSERS=5
+#
+./jmeter -n -t ../../Solutions/1_PremierPlanTest/PremierPlan.jmx -JUSERS=5 -Lorg.apache=DEBUG
+tail -f jmeter.log 
+#
+./jmeter -g ../../Solutions/1_PremierPlanTest/result.jtl -o ../../Solutions/1_PremierPlanTest/rapport
+

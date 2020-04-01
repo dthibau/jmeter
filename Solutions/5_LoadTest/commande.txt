@@ -1,0 +1,2 @@
+./jmeter -n -t ../../Solutions/5_LoadTest/LoadTest.jmx -q /home/dthibau/Formations/JMeter/Work/Solutions/5_LoadTest/user.properties -l ../../Solutions/5_LoadTest/result.jtl
+
