@@ -1,0 +1,36 @@
+line 6 column 17 - Warning: discarding unexpected <head>
+line 7 column 1 - Warning: <title> isn't allowed in <div> elements
+line 8 column 1 - Warning: meta isn't allowed in <div> elements
+line 9 column 1 - Warning: <script> lacks "type" attribute
+line 11 column 2 - Warning: <script> lacks "type" attribute
+line 12 column 2 - Warning: <link> lacks "type" attribute
+line 12 column 2 - Warning: <link> isn't allowed in <div> elements
+line 18 column 17 - Error: <nav> is not recognized!
+line 18 column 17 - Warning: discarding unexpected <nav>
+line 20 column 26 - Warning: unknown attribute "aria-label"
+line 20 column 26 - Warning: unknown attribute "aria-expanded"
+line 20 column 26 - Warning: unknown attribute "aria-controls"
+line 20 column 26 - Warning: unknown attribute "data-target"
+line 20 column 26 - Warning: unknown attribute "data-toggle"
+line 24 column 63 - Warning: trimming empty <span>
+line 25 column 25 - Warning: trimming empty <button>
+line 32 column 71 - Warning: unknown attribute "aria-expanded"
+line 32 column 71 - Warning: unknown attribute "aria-haspopup"
+line 32 column 71 - Warning: unknown attribute "data-toggle"
+line 32 column 71 - Warning: unknown attribute "role"
+line 36 column 50 - Warning: unknown attribute "aria-labelledby"
+line 38 column 83 - Warning: trimming empty <div>
+line 43 column 62 - Warning: unknown attribute "aria-disabled"
+line 43 column 62 - Warning: <a> attribute "tabindex" has invalid value "-1"
+line 46 column 33 - Warning: <form> lacks "action" attribute
+line 47 column 41 - Warning: unknown attribute "aria-label"
+line 47 column 41 - Warning: unknown attribute "placeholder"
+line 52 column 13 - Warning: discarding unexpected </nav>
+line 62 column 80 - Warning: unknown attribute "aria-describedby"
+line 69 column 68 - Warning: unknown attribute "aria-describedby"
+line 71 column 34 - Warning: <small> Anchor "referenceHelp" already defined
+InputStream: Doctype given is ""
+InputStream: Document content looks like HTML 4.01 Transitional
+30 warnings, 1 error were found!
+This document has errors that must be fixed before
+using HTML Tidy to generate a tidied up version.
