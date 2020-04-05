@@ -1,0 +1,4 @@
+/
+/produits
+/fournisseurs
+/produits?fournisseurId=1
