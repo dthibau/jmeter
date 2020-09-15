@@ -4,3 +4,9 @@ https://stackoverflow.com/questions/57419408/how-to-make-firefox-use-a-proxy-ser
 about:config dans la barre d'adresse
 network.proxy.allow_hijacking_localhost dans la recherche
 Puis bouton toggle
+
+
+Enregistrer en https :
+https://stackoverflow.com/questions/299529/jmeter-how-to-record-https-traffic
+
+
