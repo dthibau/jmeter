@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.3">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="TP7 - Scripts" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -96,7 +96,7 @@
           <boolProp name="displaySystemProperties">false</boolProp>
         </DebugSampler>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TC BAD TOKEN" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TC BAD TOKEN" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="Variables pré-définies" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -135,7 +135,7 @@
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TC AJOUT-PRODUIT" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TC AJOUT-PRODUIT" enabled="false">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -420,7 +420,7 @@
               <stringProp name="JSONPostProcessor.match_numbers">-1</stringProp>
             </JSONPostProcessor>
             <hashTree/>
-            <BSFAssertion guiclass="TestBeanGUI" testclass="BSFAssertion" testname="Assertion BSF" enabled="true">
+            <BSFAssertion guiclass="TestBeanGUI" testclass="BSFAssertion" testname="Assertion BSF" enabled="false">
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="script">int nbMembres = Integer.parseInt(vars.get(&quot;p_before_matchNr&quot;));
@@ -435,7 +435,7 @@ if ((nbMembres+1) != nbMembresAfter ) {
               <stringProp name="scriptLanguage">beanshell</stringProp>
             </BSFAssertion>
             <hashTree/>
-            <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="Assertion BeanShell" enabled="true">
+            <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="Assertion BeanShell" enabled="false">
               <stringProp name="BeanShellAssertion.query">int nbMembres = Integer.parseInt(vars.get(&quot;p_before_matchNr&quot;));
 int nbMembresAfter = Integer.parseInt(vars.get(&quot;p_after_matchNr&quot;));
 
@@ -455,6 +455,7 @@ if ((nbMembres+1) != nbMembresAfter ) {
               <stringProp name="parameters">${p_before_matchNr} ${p_after_matchNr}</stringProp>
               <stringProp name="script">int nbMembres = Integer.parseInt(args[0]);
 int nbMembresAfter = Integer.parseInt(args[1]);
+
 
 
 if ((nbMembres+1) != nbMembresAfter ) {
@@ -498,6 +499,43 @@ if ((nbMembres+1) != nbMembresAfter ) {
                 <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
                 <assertionsResultsToSave>0</assertionsResultsToSave>
                 <bytes>true</bytes>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+          <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
               </value>
             </objProp>
             <stringProp name="filename"></stringProp>

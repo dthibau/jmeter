@@ -35,7 +35,7 @@ $(document).ready(function() {
 });
 
 var responsecustom_ACTIVE_CONNECTIONSGraphInfos = {
-    data: {"result": {"minY": 0.5, "minX": 1.58618244E12, "maxY": 9.88888888888889, "series": [{"data": [[1.5861825E12, 5.166666666666667], [1.58618268E12, 9.88888888888889], [1.58618256E12, 6.933333333333332], [1.58618262E12, 9.551724137931034], [1.58618244E12, 0.5]], "isOverall": false, "label": "ACTIVE_CONNECTIONS", "isController": false}], "supportsControllersDiscrimination": false, "granularity": 60000, "maxX": 1.58618268E12, "title": "Connexions BD actives", "X_Axis": "Test duration", "sample_Metric_Name": "ACTIVE_CONNECTIONS", "Y_Axis": "Connexions actives", "content_Message": null}},
+    data: {"result": {"minY": 1.6666666666666665, "minX": 1.6421694E12, "maxY": 10.0, "series": [{"data": [[1.64216952E12, 3.0], [1.6421697E12, 10.0], [1.6421694E12, 2.0], [1.64216958E12, 8.166666666666666], [1.64216946E12, 1.6666666666666665], [1.64216964E12, 10.0]], "isOverall": false, "label": "ACTIVE_CONNECTIONS", "isController": false}], "supportsControllersDiscrimination": false, "granularity": 60000, "maxX": 1.6421697E12, "title": "Connexions BD actives", "X_Axis": "Test duration", "sample_Metric_Name": "ACTIVE_CONNECTIONS", "Y_Axis": "Connexions actives", "content_Message": null}},
     getOptions: function(){
         return {
             series: {
@@ -96,7 +96,7 @@ function refreshcustom_ACTIVE_CONNECTIONSGraph(fixTimestamps) {
     var infos = responsecustom_ACTIVE_CONNECTIONSGraphInfos;
     prepareSeries(infos.data);
     if(fixTimestamps) {
-        fixTimeStamps(infos.data.result.series, 7200000);
+        fixTimeStamps(infos.data.result.series, 3600000);
     }
     if(isGraph($("#flotResponsecustom_ACTIVE_CONNECTIONSGraph"))){
         infos.createGraph();
